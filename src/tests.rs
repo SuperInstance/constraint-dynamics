@@ -3,7 +3,6 @@
 #[cfg(test)]
 mod tests {
     use crate::constraint::*;
-    use std::collections::HashMap;
 
     #[test]
     fn constraint_system_default() {
