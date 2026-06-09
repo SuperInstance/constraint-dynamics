@@ -14,8 +14,8 @@ fn main() {
     println!("Part 1: Building a constraint system");
     let mut system: ConstraintSystem<i64> = ConstraintSystem::new();
     
-    system.add_variable("gpu_a", vec![0, 1, 2, 3]);
-    system.add_variable("gpu_b", vec![0, 1, 2, 3]);
+    system.add_variable("gpu_a", vec![0i64, 1, 2, 3]);
+    system.add_variable("gpu_b", vec![0i64, 1, 2, 3]);
     system.add_constraint(Constraint::inequality("gpu_a", "gpu_b"));
     println!("  2 variables, 1 inequality constraint\n");
 
